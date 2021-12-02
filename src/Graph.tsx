@@ -1,12 +1,13 @@
-import { Component, ReactNode, createElement } from "react";
-import { HelloWorldSample } from "./components/HelloWorldSample";
+import { parseStyle } from "./piw-utils-internal";
+import { createElement } from "react";
+import { GraphPreviewProps } from "../typings/GraphProps";
 
-import { GraphContainerProps } from "../typings/GraphProps";
+declare function require(name: string): string;
 
-import "./ui/Graph.css";
+export function preview(props: GraphPreviewProps) {
+    return <div style={parseStyle(props.style)}></div>;
+}
 
-export default class Graph extends Component<GraphContainerProps> {
-    render(): ReactNode {
-        return <HelloWorldSample sampleText={this.props.sampleText ? this.props.sampleText : "World"} />;
-    }
+export function getPreviewCss(): string {
+    return require("./ui/index.scss");
 }
