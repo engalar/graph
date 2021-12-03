@@ -1,7 +1,7 @@
 {
   "name": "graph",
   "widgetName": "Graph",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "My widget description",
   "copyright": "2020 Mendix Technology BV",
   "author": "wengao.liu@siemens.com",
@@ -30,11 +30,14 @@
     "@mendix/pluggable-widgets-tools": "^9.0.0",
     "@types/big.js": "^6.0.2",
     "@types/classnames": "^2.2.4",
+    "@types/lodash-es": "^4.17.5",
     "@types/react": "~17.0.1",
     "@types/react-dom": "~17.0.1",
     "xml2js": "^0.4.23"
   },
   "dependencies": {
+    "@antv/g6": "^4.3.11",
+    "lodash-es": "^4.17.21",
     "ahooks": "^2.10.14",
     "classnames": "^2.2.6"
   }
