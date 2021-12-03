@@ -17,6 +17,7 @@
   "scripts": {
     "m": "npm install -g cnpm rollup prettier eslint --registry=https://registry.npmmirror.com",
     "x": "cnpm i",
+    "u": "node ./script/rename.js",
     "start": "pluggable-widgets-tools start:web",
     "build": "pluggable-widgets-tools build:web",
     "lint": "pluggable-widgets-tools lint",
@@ -30,7 +31,8 @@
     "@types/big.js": "^6.0.2",
     "@types/classnames": "^2.2.4",
     "@types/react": "~17.0.1",
-    "@types/react-dom": "~17.0.1"
+    "@types/react-dom": "~17.0.1",
+    "xml2js": "^0.4.23"
   },
   "dependencies": {
     "classnames": "^2.2.6"
