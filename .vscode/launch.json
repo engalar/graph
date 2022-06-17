@@ -1,0 +1,23 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "npm build",
+      "request": "launch",
+      "runtimeArgs": [
+        "run-script",
+        "build",
+        "> ${workspaceFolder}/tests/npm_build.ans 2>&1"
+      ],
+      "runtimeExecutable": "npm",
+      "console": "internalConsole",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+  ]
+}
