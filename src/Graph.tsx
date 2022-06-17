@@ -313,12 +313,12 @@ export default function Graph(props: GraphContainerProps) {
                     }
                 }
             }
-        };
-
-        graph?.on('dblclick', cb);
-        return () => {
-            graph?.off('dblclick', cb);
         }
+
+        graph?.on("dblclick", cb);
+        return () => {
+            graph?.off("dblclick", cb);
+        };
     }, [graph, nodes, edges, props.dbclickEdge, props.dbclickNode]);
 
     const onHoverLegend = useCallback(
