@@ -1,4 +1,4 @@
 // @ts-ignore
-window.exports = {};
+window.exports = false;
 // @ts-ignore
-window.module = {};
+window.module = false;
